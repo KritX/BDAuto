@@ -22,8 +22,8 @@
             <TextBox Text="{Binding MaxSpeed, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock FontSize="14" Text="Цена, руб." />
             <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" />
-            <Button  Click="Add_Click" Content="Добавить"/>
-            <Button Click="Delete_Click" Content="Удалить" />
+            <Button  Background ="DarkSeaGreen" Click="Add_Click" Content="Добавить"/>
+            <Button Background ="IndianRed" Click="Delete_Click" Content="Удалить" />
         </StackPanel>
         <ListBox Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Cars}"
                  SelectedItem="{Binding SelectedCar}" Grid.ColumnSpan="2" Margin="0,180,0,0" SelectionChanged="ListBox_SelectionChanged">
