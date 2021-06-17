@@ -11,21 +11,21 @@ The code for this class:
 Для обеспечения возможности связывания требуется, чтобы можно было отслеживать изменения в Model. Поэтому её класс реализован с помощью интерфейса INotifyPropertyChanged.
 Код этого класса:)
 ```
-class Car : INotifyPropertyChanged
+```class Car : INotifyPropertyChanged```
         {
-            private string _model;
-            private int _maxSpeed;
-            private decimal _price;
-            public string Model
+            ````````````````````````private string _model;`````````````````````
+            ``````````````````private int _maxSpeed;```````````````
+           ```````````` private decimal _price;`````````
+            ``````public string Model```
             {
-                get { return _model; }
-                set
+                ```get { return _model; }```
+               ``` set```
                 {
-                    _model = value;
-                    OnPropertyChanged("Model");
+                   ``` _model = value;```
+                   ``` OnPropertyChanged("Model");```
                 }
             }
-            public int MaxSpeed
+           ``` public int MaxSpeed
             {
                 get
                 {
@@ -36,8 +36,8 @@ class Car : INotifyPropertyChanged
                     _maxSpeed = value;
                     OnPropertyChanged("MaxSpeed");
                 }
-            }
-            public decimal Price
+            }```
+           ``` public decimal Price
             {
                 get { return _price; }
                 set
@@ -45,9 +45,9 @@ class Car : INotifyPropertyChanged
                     _price = value;
                     OnPropertyChanged("Price");
                 }
-            }
+            }```
             public event PropertyChangedEventHandler PropertyChanged;
-            public void OnPropertyChanged([CallerMemberName] string prop = "")
+            public void OnPropertyChanged([CallerMemberName] string prop = "")```
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
             }
