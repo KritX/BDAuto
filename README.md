@@ -204,16 +204,19 @@ Markup that displays the catalog of cars in the ListBox, and information about t
 **Testing the program.**
 Deleting information about Mazda car (Click on delete button)
 (Удаление информации о машине Mazda(Клик по кнопки удалить))
+
 ![image](https://user-images.githubusercontent.com/70913346/122312942-f4068000-cf1d-11eb-9236-2f1645092867.png)
 ![image](https://user-images.githubusercontent.com/70913346/122312997-15676c00-cf1e-11eb-826e-2534045c04ca.png)
 
 Adding information about the new car Lamborghini Urus (Click on the add button)
 (Добавление информации о новой машине Lamborghini Urus(Клик по кнопки добавить))
+
 ![image](https://user-images.githubusercontent.com/70913346/122313287-9aeb1c00-cf1e-11eb-9d44-a87c61349da5.png)
 ![image](https://user-images.githubusercontent.com/70913346/122313337-b3f3cd00-cf1e-11eb-8dd7-9e50595ba0b6.png)
 
 (Daf 95 vehicle information change (Click on Daf 95))
 Изменение информации автомобиля Daf 95 (Клик по Daf 95)
+
 ![image](https://user-images.githubusercontent.com/70913346/122313463-ef8e9700-cf1e-11eb-9fcc-4db54b73dd4d.png)
 ![image](https://user-images.githubusercontent.com/70913346/122313539-0c2acf00-cf1f-11eb-887a-aac85ab93bf3.png)
 
