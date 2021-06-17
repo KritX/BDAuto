@@ -2,6 +2,7 @@
 ## Manual/Development
 To work with the MVVM pattern, let's create a new project. By default, the starting window MainWindow is added to the project - this will be the view. And now we need a Model and a ViewModel.
 (Для работы с паттерном MVVM создадим новый проект. По умолчанию в проект добавляется стартовое окно MainWindow - это и будет представление. И теперь нам нужна Model и ViewModel.)
+
 **Model**.
 The class that describes the car and is the model in the application.
 Linking requires you to be able to track changes in Model. Therefore, its class is implemented using the INotifyPropertyChanged interface.
