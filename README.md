@@ -10,7 +10,8 @@ The code for this class:
 (Класс, который описывает автомобиль и является моделью в приложении.
 Для обеспечения возможности связывания требуется, чтобы можно было отслеживать изменения в Model. Поэтому её класс реализован с помощью интерфейса INotifyPropertyChanged.
 Код этого класса:)
-```class Car : INotifyPropertyChanged
+```javascript
+class Car : INotifyPropertyChanged
         {
             private string _model;
             private int _maxSpeed;
@@ -58,7 +59,7 @@ This is the view model class through which the Car model and the MainWindow.xaml
 The view model class has a private field and a property for working with a car selected from the catalog.
 (Это класс модели представления, через который будут связаны модель Car и представление MainWindow.xaml. В этом классе определен список объектов Car и свойство, которое указывает на выделенный элемент в этом списке.
 В классе модели представления есть закрытое поле и свойство для работы с выбранным из каталога автомобилем.)
-```
+```javascript
 public Car SelectedCar
             {
                 get { return _selectedCar; }
@@ -71,7 +72,7 @@ public Car SelectedCar
 ```
 The catalog itself is presented as a collection, which will be filled in the constructor.
 (Сам каталог представлен в виде коллекции, которая будет заполняться в конструкторе.)
-```
+```javascript
 public CarViewModel()
             {
                 Cars = new ObservableCollection<Car>
@@ -84,7 +85,7 @@ public CarViewModel()
 ```
 Also included in the ViewModel are two methods. To add a new car and delete an existing one.
 (Также включено в ViewModel два метода. Для добавления нового автомобиля и удаления уже существующего.)
-```
+```javascript
 public void AddCar()
             {
                 Car car = new Car();
@@ -101,7 +102,7 @@ public void AddCar()
 ```
 The complete source code for the ViewModel class.
 (Полный исходный код класса ViewModel.)
-```
+```javascript
  public CarViewModel()
             {
                 Cars = new ObservableCollection<Car>
@@ -137,7 +138,7 @@ In the case of WPF View, this is the application window.
 The binding of specific controls to data is done in XAML.
 (В случае WPF View(представление), это окно приложения.
 Связывание конкретный элементов управления с данными осуществляется в XAML.)
-```
+```javascript
 public MainWindow()
         {
             InitializeComponent();
@@ -157,7 +158,7 @@ This defines a ListBox element that is bound to the Cars property of the Applica
 Markup that displays the catalog of cars in the ListBox, and information about the selected car (the item selected with the mouse in the ListBox).
 (Здесь определен элемент ListBox, который привязан к свойству Cars объекта ApplicationViewModel, а также определен набор элементов, которые привязаны к свойствам объекта Car, выделенного в ListBox.
 Разметка, которая отображает каталог автомобилей в ListBox, а информацию о выбранном автомобиле (выбранный мышью элемент в ListBox).)
-```
+```javascript
 <Window x:Class="WpfApp1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
