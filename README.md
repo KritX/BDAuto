@@ -202,6 +202,7 @@ Markup that displays the catalog of cars in the ListBox, and information about t
 </Window>
 ```
 **Testing the program.**
+
 Deleting information about Mazda car (Click on delete button)
 (Удаление информации о машине Mazda(Клик по кнопки удалить))
 
